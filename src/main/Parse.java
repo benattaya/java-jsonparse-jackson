@@ -22,8 +22,8 @@ public class Parse {
 
             // TODO : get the "lat" and "lon" values of the "coord"
             JsonNode coord = root.get("coord");
-            Double cityLatitude = root.get("lat").asDouble();
-            Double cityLongitude = root.get("lon").asDouble();
+            Double cityLatitude = coord.get("lat").asDouble();
+            Double cityLongitude = coord.get("lon").asDouble();
 
             // TODO : get the "wind" attribute as an Wind object
 
